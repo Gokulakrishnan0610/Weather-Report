@@ -30,41 +30,41 @@ function App() {
   }
 
   return (
-    <div className="bg-gray-800 w-full p-20">
-      <div className='bg-white text-black p-10 flex flex-col gap-4' >
-        <h1 className="text-4xl">Weather Report</h1>
-        <p className="text-2xl">I can give you a weather report about your city!</p>
+    <div className="bg-gray-800 w-full p-10 sm:p-20">
+      <div className='bg-white text-black p-6 sm:p-10 flex flex-col gap-4' >
+        <h1 className="text-2xl sm:text-4xl ">Weather Report</h1>
+        <p className="sm:text-2xl">I can give you a weather report about your city!</p>
         <div>
-          <input type="text" placeholder='Enter Your City Name' className="border solid-black p-1 text-2xl  mt-2" onChange={handlechange} /><br />
-          <button className="bg-black text-white mt-5 p-2 text-2xl mb-2" onClick={getweather} >Get Report</button>
+          <input type="text" placeholder='Enter Your City Name' className="border solid-black p-1 sm:text-2xl  mt-2" onChange={handlechange} /><br />
+          <button className="bg-black text-white mt-5 p-2 sm:text-2xl mb-2" onClick={getweather} >Get Report</button>
         </div>
 
 
         <div class="w-full lg:w-1/2 flex ml-0">
-          <div class="lg:my-3 bg-yellow-300 text-black p-8 w-full flex flex-col gap-3">
+          <div class="lg:my-3 bg-yellow-300 text-black p-4 sm:p-8 w-full flex flex-col gap-3">
             <div className="flex flex-row justify-between">
-              <p className="text-2xl"><b>Weather:</b></p>
+              <p className="sm:text-2xl"><b>Weather:</b></p>
               <div className="flex flex-row gap-2 text-center">
                 <Weatherimage weather={weather}/>
-                <p className="text-2xl">{weather}</p>
+                <p className="sm:text-2xl">{weather}</p>
               </div>
 
             </div>
             <div className="flex flex-row justify-between">
-              <p className="text-2xl"><b>Degree:</b></p>
-              <p className="text-2xl">{degree}</p>
+              <p className="sm:text-2xl"><b>Degree:</b></p>
+              <p className="sm:text-2xl">{degree}</p>
             </div>
             <div className="flex flex-row justify-between">
-              <p className="text-2xl"><b>humidity:</b></p>
-              <p className="text-2xl">{humidity}</p>
+              <p className="sm:text-2xl"><b>humidity:</b></p>
+              <p className="sm:text-2xl">{humidity}</p>
             </div>
             <div className="flex flex-row justify-between">
-              <p className="text-2xl"><b>Temperature:</b></p>
-              <p className="text-2xl">{temperature}</p>
+              <p className="sm:text-2xl"><b>Temperature:</b></p>
+              <p className="sm:text-2xl">{temperature}</p>
             </div>
             <div className="flex flex-row justify-between">
-              <p className="text-2xl"><b>Description:</b></p>
-              <p className="text-2xl">{description}</p>
+              <p className="sm:text-2xl"><b>Description:</b></p>
+              <p className="sm:text-2xl">{description}</p>
             </div>
           </div>
         </div>
